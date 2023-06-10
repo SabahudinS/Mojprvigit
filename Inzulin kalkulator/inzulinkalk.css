@@ -1,0 +1,293 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* postavka Home stranice*/
+
+.glavna{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'content sidebar'
+    'footer footer';
+
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+header,
+footer,
+main, 
+aside, 
+nav {
+    color:#fff;
+    background:steelblue;
+    padding: 20px;
+    border: 1px solid skyblue;
+}
+
+header{grid-area: header;
+      text-align: center;
+    }
+
+span{
+    font-size: 36px;
+    font-weight: 700;
+} 
+
+.logotip{
+    width:80px;
+    height: 80px;
+    float: left;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+
+nav{grid-area: nav;
+}
+
+main{grid-area: content;
+}
+
+aside{grid-area: sidebar;
+    justify-content: center;
+    display:block;
+    gap: 2px;
+}
+
+h2{
+    text-transform: uppercase;
+}
+footer{grid-area: footer;
+    text-align: center;}
+
+a:hover{background:white;}
+
+img{
+    width: 100%;
+}
+
+
+/**Responsive layout:
+Media Queries: Koriste se da naprave webpage responsive. Kada hoćemo da prilagodimo 
+prikaz stranice na drugim uređajima onda koristimo media quaries. 
+Sve što trebamo je odrediti koji dio ekrana želimo da css aktivira. 
+Idemo na max-width. 
+Za mobilne je to 576px, tablet 768px, desktop 992px, large desktops 1200px +.*/		
+
+
+/* media setup za Home*/
+@media only screen and (max-width: 768px) {
+    .glavna {
+        grid-template-areas: 
+        'header header'
+        'content sidebar'
+        'footer footer';
+
+        grid-template-columns: 2fr 1fr;
+            grid-template-rows: 110px 1fr 70px;;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .glavna {
+        grid-template-areas: 
+        'header'
+        'content'
+        'sidebar'
+        'footer';
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+iframe{
+    width: 100%;
+    height: 500px;
+    border: 0;
+    allowfullscreen: true;
+    aria-hidden:false;
+    tabindex: 0;}
+
+
+/* Postavke kalkulatora*/
+
+.calculator {
+    margin-top: 30px;
+    width: 350px;
+    height: 320px;
+    background-color: #c0c0c0;
+    box-shadow: 0px 0px 0px 10px #666;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+#display {
+    width: 320px;
+    height: 40px;
+    text-align: right;
+    background-color: black;
+    border: 3px solid white;
+    font-size: 18px;
+    left: 2px;
+    top: 2px;
+    color: #7fff00;
+}
+
+.btnTop {
+    color: white;
+    background-color: #6f6f6f;
+    font-size: 14px;
+    margin: auto;
+    width: 50px;
+    height: 25px;
+}
+
+.btnNum {
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    margin: auto;
+    width: 50px;
+    height: 25px;
+}
+
+.btnMath {
+    color: white;
+    background-color: #ff4561;
+    font-size: 14px;
+    margin: auto;
+    width: 50px;
+    height: 25px;
+}
+
+.btnOpps {
+    color: white;
+    background-color: #ff9933;
+    font-size: 14px;
+    margin: auto;
+    width: 50px;
+    height: 25px;
+}
+
+/* Inzulin kalkulator app */
+
+.okvir {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+        'okvir',
+        'header ',
+        'content';
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.kontejner {
+    grid-area: okvir;
+    background-color: #fff;
+    margin: 15px;
+    padding: 10px;
+    border: 10px solid rgb(104, 95, 233);
+    box-shadow: inset;
+}
+
+
+header {
+    grid-area: header;
+    font-size: 30px;
+    text-align: start;
+    justify-content: left;
+    position: relative;
+    border: 3px solid black;
+}
+
+
+main {
+    grid-area: content;
+    border: 3px solid black;
+}
+
+#header {
+    background: rgba(177, 183, 191, 0.5);
+    margin: 10px;
+    padding: 10px;
+    border-width: 80%;
+    max-width: 300px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+h1 {
+    color: #ed0909;
+}
+
+.racun {
+    margin: 10px;
+    padding: 5px;
+    background: #fff;
+    border: 2px solid black;
+}
+
+label {
+    max-width: 45px;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+}
+
+input {
+    margin-left: 0px;
+    padding-left: 5px;
+    font-size: 20px;
+    color: #ed0909;
+    width: 100px;
+    border: 2px solid;
+    caret-color: #000;
+}
+
+button {
+    display: flex;
+    margin-left: 5px;
+    padding: 4px;
+    font-size: 20px;
+    background-color: #8f6740;
+    border: 1px solid #000;
+}
+
+.instrukcije {
+    padding: 5px;
+    margin: 8px;
+    padding: 5px;
+    border: 2px solid #000;
+    background: #5d2c2c;
+}
+
+/*
+@media only screen and (max-width: 576px) {
+    .body {
+        grid-template-areas:
+            'okvir'
+            'header'
+            'content'
+        ;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}*/
+

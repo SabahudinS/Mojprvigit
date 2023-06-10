@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Koliko inzulina za obrok">   
+    <meta name="keywords" content="diabetes, T1D, dijabetes, inzulin, mjerenje,
+    korekcija inzulina, how much insulin, bolus, bazalni inzulin">    
+    <link rel="stylesheet" href="inzulinkalk.css">
+    <title>Inzulin kalkulator</title>
+</head>
+<body>
+<div class="glavna">
+    <header>
+        <div class="naslov">
+            <span>Izračunavanje bolusa za obrok</span>     
+            <img class="logotip" src="t1d.jpg" alt="">
+        </div>
+    </header>
+
+    <main>
+        <div class="uvod">
+            <h2>Pozdrav svim slatkišima i njihovim roditeljima</h2> <br>
+            <p>Znam kako vam je na početku...mi smo bili sluđeni informacijom da naša dugo očekivana beba od 11 i po mjeseci ima
+                dijabetes. Iako smo u bolnici prisustvovali obuci o kontroli šećera u krvi, moram priznati da mi je sve prošlo u
+                magli. Trebalo mi je vremena da ponovo složim stvari u glavi i ponovo naučim definicije ukupne dnevne doze
+                inzulina, inzulinske osjetljivosti, korekcije...i ponovo naučim kako se sve to računa.</p>
+            <p>Znajući kako je svim roditeljima novootkrivenih dijabetičara, pokušao sam složiti sve na jedno mjesto. Nadam se
+                da će vam ovo biti od pomoći.</p>
+            <p>Imajući u vidu da osobe sa dijabetesom imaju jedinstvenu reakciju i osjetljivost na inzulin, molim vas da sve ovo
+                uzmete samo kao osnovni vodič za računanje. <b>Za bolju i efikasniju kontrolu šećera u krvi se konsultujte sa
+                    vašim ljekarom.</b></p><br>
+        </div>
+        
+        <hr><br>
+        
+        <div class="upute">
+            <h2>Ukupne dnevne količine</h2> <br>
+            <p>Ukupna dnevna doza inzulina (UDDI) je količina inzulina
+                koja se koristi tijekom cijelog dana, odnosno
+                zbir bolusa i bazalne doze tokom 24 sata.
+                Postoji jednostavan način određivanja Ukupne
+                dnevne količine. Ovaj je parametar potreban za
+                izračunavanje drugih parametara, poput omjera
+                ugljikohidrata i inzulinske osjetljivosti.
+            </p>
+            <br>
+            
+        
+            <hr><br>
+            <h2>Omjer ugljikohidrata</h2> <br>
+            <p> Omjer ugljikohidrata (I/UH) navodi koliko grama ugljikohidrata pokriva jedna jedinica inzulina. Kod svake osobe je drugačije, a broj uveliko zavisi od količine inzulina koju je pacijent dobio u prethodna 24 sata. Da biste izračunali omjer ugljikohidrata, podijelite 500 sa UDDI = broj grama ugljikohidrata/jedinici inzulina. <br>
+
+            Npr. 500 / 20 = 25. Jedna jedinica inzulina pokriva 25 gr ugljikohidrata u obroku. <br>   Obično se računanje kod odraslih uzima omjer od 12 g UH po 1 jedinici inzulina. 
+            </p>
+            <br>
+            
+        
+            <hr><br>
+            <h2>Faktor inzulinske osjetljivosti</h2> <br>
+            <p> Inzulinska osjetljivost (IO) je pad količine glukoze u krvi
+                (mmol/l) koji uzrokuje jedna primljena jedinica
+                inzulina. Da bi se odredila inzulinska osjetljivost,
+                primjenjuje se pravilo 80 na sljedeći način:
+                Inzulinska osjetljivost = 100 / UDDI (mmol/l) = broj (mmol/l) /jedinici inzulina. <br>
+
+                Npr. 100 / 20 = 5. Jedna jedinica inzulina će spustiti 5 mmol/l šećera u krvi. 
+            </p>
+            <br>
+           
+            <hr><br>
+        
+            <h2>Korekcija</h2> <br>
+            <p> Korekciju dodajemo kada je izmjereni nivo šećera prije obroka viši od željenog. Korekciju izračunavamo tako da
+                od izmjerene količine šećera oduzmemo željenu količinu i onda to podijelimo sa inzulinskom osjetljivošću.
+                (izmjereni ŠUK - željeni ŠUK) / IO. Tu količinu dodajemo bolusu za obrok. <br>
+
+                Npr. (10 - 6) / 4 = 1. Dodajemo korekciju od jedne jedinice inzulina. 
+            </p>
+            <br>
+            
+            <hr> <br>
+        
+            <h2>Bolus za obrok koji slijedi</h2> <br>
+            <p> U zavisnosti od toga koliki je izmjereni ŠUK prije obroka, daćemo onoliko inzulina da pokrijemo UH u obroku, i
+                dodati korekciju ako je potrebno. Računamo tako da jedna jedinica pokriva 12 g UH. 
+            </p><br>
+            <hr><br>
+            <h2>Izračunavanje bolusa</h2> <br>
+            <p>Sada samo upotrijebite formulu za izračunavanje tako što ukupnu količinu UH u obroku podijelite sa 12 da dobijete količinu inzulina za obrok,
+                i dodate korekciju ako je potrebno. </p> <br>
+        
+            <p>(UH u obroku/12) + ((Izmjereni ŠUK - željeni ŠUK) / IO) = Ukupna količina inzulina.
+            </p><br>
+            <hr><br>
+            <h2>Računanje masti i proteina</h2> <br>
+
+            <p> Masti i proteini se moraju uzeti u obzir prilikom računanja količine inzulina. 
+                Da bi smo odredili koliko inzulina nam je potrebno koristimo sljedeću računicu. 
+                Jedan gram proteina stvara 4 kcal, a jedan gram masti 9 kcal. <br>
+                Kada izračunamo koliko masti i proteina ima u obroku onda računamo koliko će nam inzulina biti potrebno. 
+                <br>
+                Jedna FPU (jedinica masti i proteina) ili 100 kcal = 10 g ugljikohidrata. <br>
+                <br>
+                Recimo da u obroku imamo 18 g masti, i 28 gr proteina. <br>
+                
+                18 x 9 = 162 kcal; <br>
+                28 x 4 = 112 kcal;   <br>
+                
+                162 + 112= 274 kcal;  <br>
+                274 / 10 = 2.74 FPU ili možemo zaokružiti na 27 g ugljikohidrata <br>
+                <br>
+                Kada dajemo inzulin na pumpu, normalni bolus koji pokriva samo ugljikohidrate
+                u obroku možemo dati na početku obroka, a inzulin za masti i proteine dajemona produženi
+                bolus (square ili dual) po pravilu: <br>
+
+                1 FPU = 3 sata; <br>
+                2 FPU = 4 sata; <br>
+                3 FPU = 5 sata; <br>
+                4 FPU = 8 sata; <br>
+<br>
+                Sada samo upotrijebite formulu za izračunavanje tako što ukupnu količinu UH u obroku podijelite sa 12 da dobijete
+                količinu inzulina za obrok,
+                i dodate korekciju ako je potrebno. <strong>Napomena</strong>. Ako u jelu ima više masnoće (20 - 40 g), potrebno je
+                dodati nekih 30% više inzulina od normalne doze.</p> <br>
+            
+            <p>(UH u obroku/12) + ((Izmjereni ŠUK - željeni ŠUK) / IO) = Ukupna količina inzulina.
+            </p><br>
+        
+            <div>
+            <hr><br>
+            <div id tablice>
+            <h3>Tablice nutritivnih vrijednosti:</h3> <br>
+            <iframe width="700" height="500" frameborder="0" scrolling="no"
+                src="https://onedrive.live.com/embed?resid=D6813C29352E24E3%21211&authkey=%21AMatvCDHMB_jRK4&em=2&wdAllowInteractivity=False&ActiveCell='Sheet1'!A1&Item='Sheet1'!A1%3AN109&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&resen=false&ed1JS=false">
+            </iframe>
+            </div>
+            <hr>
+        <div>
+            <h2>Informacije o simptomima</h2> <br>
+            <p>Ovu tabelu možete odštampati i dati učiteljima/nastavnicima u školi da znaju kako prepoznati simptome i kako djelovati u slučaju potrebe. </p> <br>
+            <img src="tablicazaskolu.jpg" alt="Pojašnjenja za nastavno osoblje">
+        </div>
+    </main>
+
+    <aside>
+        <p>
+            <h2>Računanje potrebnog inzulina:</h2> <br>
+        (gr masti x 9) + (gr proteini x 4) = broj kalorija / 10 = Jedinice FPU <br>
+        1 FPU = 10 UH; <br>
+        <hr>
+        (UH u obroku/12) + ((Izmjereni ŠUK - željeni ŠUK) / IO) = Ukupna količina inzulina.<br>
+        </p>
+        <br>
+        <form name="sci-calc">
+                <table class="calculator" cellspacing="0" cellpadding="1">
+                    <tr>
+                        <td colspan="5"><input id="display" name="display" value="0" size="28" maxlength="25"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btnTop" name="btnTop" value="C" onclick="this.form.display.value=  0 "></td>
+                        <td><input type="button" class="btnTop" name="btnTop" value="<--" onclick="deleteChar(this.form.display)">
+                        </td>
+                        <td><input type="button" class="btnTop" name="btnTop" value="="
+                                onclick="if(checkNum(this.form.display.value)) { compute(this.form) }"></td>
+                        <td><input type="button" class="btnOpps" name="btnOpps" value="&#960;"
+                                onclick="addChar(this.form.display,'3.14159265359')"></td>
+                        <td><input type="button" class="btnMath" name="btnMath" value="%" onclick=" percent(this.form.display)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btnNum" name="btnNum" value="7" onclick="addChar(this.form.display, '7')">
+                        </td>
+                        <td><input type="button" class="btnNum" name="btnNum" value="8" onclick="addChar(this.form.display, '8')">
+                        </td>
+                        <td><input type="button" class="btnNum" name="btnNum" value="9" onclick="addChar(this.form.display, '9')">
+                        </td>
+                        <td><input type="button" class="btnOpps" name="btnOpps" value="x&#94;"
+                                onclick="if(checkNum(this.form.display.value)) { exp(this.form) }"></td>
+                        <td><input type="button" class="btnMath" name="btnMath" value="/" onclick="addChar(this.form.display, '/')">
+                        </td>
+                    <tr>
+                        <td><input type="button" class="btnNum" name="btnNum" value="4" onclick="addChar(this.form.display, '4')">
+                        </td>
+                        <td><input type="button" class="btnNum" name="btnNum" value="5" onclick="addChar(this.form.display, '5')">
+                        </td>
+                        <td><input type="button" class="btnNum" name="btnNum" value="6" onclick="addChar(this.form.display, '6')">
+                        </td>
+                        <td><input type="button" class="btnOpps" name="btnOpps" value="ln"
+                                onclick="if(checkNum(this.form.display.value)) { ln(this.form) }"></td>
+                        <td><input type="button" class="btnMath" name="btnMath" value="*" onclick="addChar(this.form.display, '*')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btnNum" name="btnNum" value="1" onclick="addChar(this.form.display, '1')">
+                        </td>
+                        <td><input type="button" class="btnNum" name="btnNum" value="2" onclick="addChar(this.form.display, '2')">
+                        </td>
+                        <td><input type="button" class="btnNum" name="btnNum" value="3" onclick="addChar(this.form.display, '3')">
+                        </td>
+                        <td><input type="button" class="btnOpps" name="btnOpps" value="&radic;"
+                                onclick="if(checkNum(this.form.display.value)) { sqrt(this.form) }"></td>
+                        <td><input type="button" class="btnMath" name="btnMath" value="-" onclick="addChar(this.form.display, '-')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btnMath" name="btnMath" value="&#177"
+                                onclick="changeSign(this.form.display)"></td>
+                        <td><input type="button" class="btnNum" name="btnNum" value="0" onclick="addChar(this.form.display, '0')">
+                        </td>
+                        <td><input type="button" class="btnMath" name="btnMath" value="&#46;"
+                                onclick="addChar(this.form.display, '&#46;')"></td>
+                        <td><input type="button" class="btnOpps" name="btnOpps" value="x&#50;"
+                                onclick="if(checkNum(this.form.display.value)) { square(this.form) }"></td>
+                        <td><input type="button" class="btnMath" name="btnMath" value="+" onclick="addChar(this.form.display, '+')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btnMath" name="btnMath" value="(" onclick="addChar(this.form.display, '(')">
+                        </td>
+                        <td><input type="button" class="btnMath" name="btnMath" value=")" onclick="addChar(this.form.display,')')">
+                        </td>
+                        <td><input type="button" class="btnMath" name="btnMath" value="cos"
+                                onclick="if(checkNum(this.form.display.value)) { cos(this.form) }"></td>
+                        <td><input type="button" class="btnMath" name="btnMath" value="sin"
+                                onclick="if(checkNum(this.form.display.value)) { sin(this.form) }"></td>
+                        <td><input type="button" class="btnMath" name="btnMath" value="tan"
+                                onclick="if(checkNum(this.form.display.value)) { tan(this.form) }"></td>
+                    </tr>
+                </table>
+            </form>
+            <br>
+            <textarea name="racun" id="" cols="50" rows=10" placeholder="Npr. (10 / 12) + ((10 - 6) / 5) = 0.83 + 0.8 = 1.63 "></textarea>
+        <!--Inzulin kalkulator app-->
+        <br>
+            <div class="kontejner">
+                <div id="header">
+                    <h1>Kalkulator inzulina</h1>
+                </div>
+                <div class="racun">
+                    <label for="uddi">UDDI: </label>
+                    <input type="text" id="tddi"><br><br>
+                    <label for="ibg" id="ibg">ŠUK: </label>
+                    <input type="text" id="cbg"><br><br>
+                    <label for="zbg" id="zbg">CILJ:</label>
+                    <input type="text" id="wbg"><br><br>
+                    <label for="uuh">UH:</label>
+                    <input type="text" name="" id="uh"><br>
+                    <br>
+            
+                    <button id="subBtn">IZRAČUNAJ</button><br>
+                    <label for="total" id="tot"></label>
+                </div>
+                <div class="instrukcije">
+                    UDDI: Ukupno inzulina prethodnog dana. <br>
+                    ŠUK: Izmjereni nivo ŠUK. <br>
+                    CILJ: Željena vrijednost ŠUK. <br>
+                    UH: Količina UH u obroku.
+                </div>
+        
+        
+        </aside>
+
+
+
+    <footer>
+        Copyrights &copy; Otac jedne slatkice, 2023.
+
+    </footer>
+</div>
+
+
+<script src="calscript.js"></script>
+</body>
+</html>
