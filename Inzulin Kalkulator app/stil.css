@@ -1,0 +1,117 @@
+*{
+	top: 30;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+	max-width: 400px;
+	max-height: 80vh;
+	border-radius: 10px;
+	justify-content: center;
+}
+
+.okvir {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-areas:
+		'okvir',
+		'header ',
+		'content';
+
+	grid-template-columns: 1fr ;
+	grid-template-rows: 1fr 2fr 1fr;
+}
+
+.kontejner{
+	grid-area: okvir;
+	background-color: #fff;
+	margin: 15px;
+	padding: 10px;
+	border: 10px solid rgb(104, 95, 233);
+	box-shadow: inset;
+}
+
+
+header {	
+	grid-area: header;
+	font-size: 30px;
+	text-align: start;
+	justify-content: left;
+	position: relative;
+	border: 3px solid black;
+}
+
+
+main {
+	grid-area: content;
+	border: 3px solid black;
+}
+
+#header{
+	background: rgba(177, 183, 191, 0.5);
+	margin: 10px;
+	padding: 10px;
+	border-width: 80%;
+	max-width: 300px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+h1{
+	color: #ed0909;
+}
+
+.racun{
+	margin: 10px;
+	padding: 5px;
+	background: #fff;
+	border: 2px solid black;
+}
+label{max-width: 45px;
+	color: black;
+	font-weight: bold;
+	font-size: 14px;
+	border: none;
+}
+
+input{margin-left: 0px;
+	padding-left: 5px;
+	font-size: 20px;
+	color: #ed0909;
+	width:100px;
+	border: 2px solid ;
+	caret-color: #000;
+	}
+
+button{
+	display: flex;
+	margin-left: 5px;
+	padding: 4px;
+	font-size: 20px;
+	background-color: #8f6740;
+	border: 1px solid #000;
+}
+
+.instrukcije{
+	padding: 5px;
+	margin: 8px;
+	padding: 5px;
+	border: 2px solid #000;
+	background: #5d2c2c;
+}
+
+
+@media only screen and (max-width: 576px) {
+	.glavna {
+		grid-template-areas:
+			'okvir'
+			'header'
+			'content'
+			;
+
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+}
